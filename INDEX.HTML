@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/contact me/download (2).png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/contact me/download (2).png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/contact me/download (2).png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="navbars">
+            <div id="name"><img src="images/K-Letter-PNG-Pic.png" alt="" >unal</div>
+            <div id="nav-items">
+                <div id="project" class="nav-style"><a href="#project-section">PROJECTS</a></div>
+                <div id="skills" class="nav-style"> <a href="#skill-section">SKILLS</a></div>
+                <div id="contactme" class="nav-style"><a href="#contact-me">CONTACT ME</a></div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="main-left">
+                            <div class="main-heading">HI! KUNAL GAMBHIR </div>
+                            <div class="sub-heading" >I’m a software developer and here is my portfolio website. Here you’ll learn about my journey as a
+                                software developer</div>
+                            
+                            <div id="main-text" class="main-heading">
+                                I am a <span class="role"></span>
+                            </div>
+                           
+                            <div id="faded">Kunal Gambhir</div>
+            </div>
+                <div id="main-right">
+                                <div id="my-img">
+                                    <img src="images/WhatsApp Image 2023-09-25 at 15.49.50.jpeg" alt="">
+                                </div>
+
+                                <div id="hire-btn"> <div class="btn-pink" id="btn">Hire me</div></div>
+
+               
+                                
+                </div>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+        <div id="skill-section">
+            <div class="main-heading" id="skill-heading"> SKILLS</div>
+
+
+            <div id="skill-slider">
+                <div id="slide-container">
+                    <div class="slide" >
+                        <img src="images/skills image/learn-programming-career-jpg.webp" id="img1" alt="">
+                        <div class="caption">Good With Data Structure </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/skills image/python-coding-mistakes.jpg" alt="">
+                        <div class="caption"> Proficient In Python</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/skills image/untitlsssssed.png" alt="">
+                        <div class="caption">Full Stack Web Developer</div>
+                    </div>
+                    <div>
+                        <span class="arrow" id="prev">
+                            &#10094;
+                        </span>
+                        <span class="arrow" id="next">
+                            &#10095;
+                        </span>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="project-section">
+            <div class="main-heading" id="project-heading">PROJECTS</div>
+            <div id="project-cart">
+                <div class="project-box">
+                    <div class="project-card-image"> <img src="images/project images/getty_503426092_342208.jpg" alt=""></div>
+                    <div class="project-card-text">
+                        <h4>WEB DEVELOPMENT</h4>
+                        I designed and developed my website from scratch, using the latest web development technologies. I used HTML to create
+                        the structure of the website, CSS to style the website, and JavaScript to add interactivity. I also used Bootstrap, a
+                        popular CSS framework, to make the website responsive and to add pre-built components, such as navigation bars and
+                        buttons.
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="project-card-image"><img src="images/project images/images.png" alt=""> </div>
+                    <div class="project-card-text">
+                        <h4>SUDOKU SOLVER IN C++</h4>
+                        I implemented my solver using a backtracking algorithm. This algorithm works by recursively trying different values in
+                        each cell until a valid solution is found. I also optimized my algorithm to improve its performance.
+
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="project-card-image"><img src="images/project images/pandas_logo.png" alt=""></div>
+                    <div class="project-card-text">
+                        <h4>PANDAS IN PYTHON</h4>
+                        I implemented my Excel reader using a variety of Pandas functions, such as read_excel(), parse_dates(), and dropna(). I
+                        also optimized my reader to improve its performance.
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+<hr>
+<br>
+        <div id="contact-me">
+            <div class="main-heading" id="contact-heading">CONTACT ME</div>
+        <div class="contact-form">
+            <form id="contact-form" action="process_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+
+
+
+
+     </div>
+        <footer>
+            &copy; 2023 KUNAL GAMBHIR
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script>
+    var typeData = new Typed(".role", {
+        strings: [
+            "Full Stack Developer",
+            "Web Developer",
+            "UI-UX Designer",
+            "Backend Developer",
+            "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+    });
+</script>
+<script src="script.js"></script>
+</body>
+
+</html> 
